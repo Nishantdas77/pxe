@@ -5,7 +5,7 @@ background: linear-gradient(90deg, rgba(16,12,97,1) 0%, rgba(18,18,163,1) 48%, r
 
 }
 .three-columns-grid {
-    padding: 1px 140px;
+    padding: 0px 140px;
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -30,20 +30,22 @@ background: linear-gradient(90deg, rgba(16,12,97,1) 0%, rgba(18,18,163,1) 48%, r
     color: aliceblue;
 }
 .six-columns-grid {
-    padding: 1px 140px;
+    padding: 0px 140px;
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding-bottom: -12px;
+
 }
 
 /* columns */
 .six-columns-grid > * {
     padding:1rem;
 }
-.six-columns-grid h4 {
-    color: white;
+.six-columns-grid p:hover {
+    color: black;
+    
 }
+
 .six{
     margin-bottom: 0px;
 }
@@ -134,3 +136,78 @@ background: linear-gradient(90deg, rgba(16,12,97,1) 0%, rgba(18,18,163,1) 48%, r
    font-size: 20px;
    text-align: left;
   }
+
+
+
+
+
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The subnavigation menu */
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    margin-top: -30px;
+  }
+  
+  /* Add a blue background color to navigation links on hover */
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: rgba(18,18,163,1)  ;
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(45, 13, 226);
+    width: 18%;
+    z-index: 1;
+    height: 3.5%;
+    margin-left: 480px;
+    border-radius: 10px;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    
+    color: black;
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+  
