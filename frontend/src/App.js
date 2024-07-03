@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import Home from "./Home/Home"
 import Director from "./Home/Director";
+import RS from "./Home/RS";
+import Hrdc from "./Home/Hrdc";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
    
       <Route path="/" element={<Home/>} />
       <Route path="/director" element={<Director/>} />
+      <Route path="/rs" element={<RS/>} />
+      <Route path="/hrdc" element={<Hrdc/>} />
     </Routes>
     </BrowserRouter>
   );
