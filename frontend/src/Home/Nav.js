@@ -8,13 +8,13 @@ function Nav() {
     
   return (
     <div  >
-   <div className='nav'>
+   <div className='navb'>
       <div className="three-columns-grid">
     <div><img src={companyLogo} alt="BigCo Inc. logo"/>
     {/* <div className= "vertical"></div> */}
     </div>
     <div><h3 className='white'>Proof & Experimental Establishment (PXE)</h3></div>
-    <div>  </div>
+    <div><Link to={"/addemployee"}><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG-5Wi8qZXluHi11q-AHGh8riznXRoltGVYQ&s' alt='' style={{width:"40px",marginLeft:"300px",borderRadius:"20px",marginTop:"20px"}}></img> </Link>  </div>
 </div>
 <hr className='hr'/>
 <div >
@@ -30,9 +30,9 @@ function Nav() {
       <a href="#deliver" style={{marginLeft:"80px"}}><Link to={"/hrdc"}>HRDC</Link></a>
     </div>
   </div></h4></div>
-    <div> <h4> Employees</h4></div>
-    <div> <h4 > About us</h4></div>
-    <div> <h4 > Contact us</h4></div>
+  <div><h4 > <Link to={"/intern"} className='link' style={{textDecoration:"none", color:"white", }}><p style={{marginTop: "0px",marginLeft:"25px",}}>Intern</p></Link></h4></div>
+  <div><h4 > <Link to={"/director"} className='link' style={{textDecoration:"none", color:"white",}}><p>Instrument/Product</p></Link></h4></div>
+  <div><h4 > <Link to={"/contact"} className='link' style={{textDecoration:"none", color:"white",}}><p>Contact us</p></Link></h4></div>
 </div></div></div>
    </div></div>
   );
