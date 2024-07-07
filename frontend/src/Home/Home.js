@@ -2,6 +2,7 @@ import React from 'react';
 import "./Home.css"
 import Nav from './Nav';
 import logo from './img/Proof.jpg';
+import Footer from './Footer';
 
 function Home() {
   return (
@@ -21,7 +22,7 @@ function Home() {
         <p>Test, evaluation and proof of various types of armament stores.</p>
         </div>
         </div>
-
+       <Footer/>
    </div>
   );
 }
